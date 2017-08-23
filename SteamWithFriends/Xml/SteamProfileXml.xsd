@@ -1,0 +1,81 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="NewDataSet" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+  <xs:element name="profile">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="steamID64" type="xs:string" minOccurs="0" />
+        <xs:element name="steamID" type="xs:string" minOccurs="0" />
+        <xs:element name="onlineState" type="xs:string" minOccurs="0" />
+        <xs:element name="stateMessage" type="xs:string" minOccurs="0" />
+        <xs:element name="privacyState" type="xs:string" minOccurs="0" />
+        <xs:element name="visibilityState" type="xs:string" minOccurs="0" />
+        <xs:element name="avatarIcon" type="xs:string" minOccurs="0" />
+        <xs:element name="avatarMedium" type="xs:string" minOccurs="0" />
+        <xs:element name="avatarFull" type="xs:string" minOccurs="0" />
+        <xs:element name="vacBanned" type="xs:string" minOccurs="0" />
+        <xs:element name="tradeBanState" type="xs:string" minOccurs="0" />
+        <xs:element name="isLimitedAccount" type="xs:string" minOccurs="0" />
+        <xs:element name="customURL" type="xs:string" minOccurs="0" />
+        <xs:element name="memberSince" type="xs:string" minOccurs="0" />
+        <xs:element name="steamRating" type="xs:string" minOccurs="0" />
+        <xs:element name="hoursPlayed2Wk" type="xs:string" minOccurs="0" />
+        <xs:element name="headline" type="xs:string" minOccurs="0" />
+        <xs:element name="location" type="xs:string" minOccurs="0" />
+        <xs:element name="realname" type="xs:string" minOccurs="0" />
+        <xs:element name="summary" type="xs:string" minOccurs="0" />
+        <xs:element name="mostPlayedGames" minOccurs="0" maxOccurs="unbounded">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="mostPlayedGame" minOccurs="0" maxOccurs="unbounded">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="gameName" type="xs:string" minOccurs="0" />
+                    <xs:element name="gameLink" type="xs:string" minOccurs="0" />
+                    <xs:element name="gameIcon" type="xs:string" minOccurs="0" />
+                    <xs:element name="gameLogo" type="xs:string" minOccurs="0" />
+                    <xs:element name="gameLogoSmall" type="xs:string" minOccurs="0" />
+                    <xs:element name="hoursPlayed" type="xs:string" minOccurs="0" />
+                    <xs:element name="hoursOnRecord" type="xs:string" minOccurs="0" />
+                    <xs:element name="statsName" type="xs:string" minOccurs="0" />
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="groups" minOccurs="0" maxOccurs="unbounded">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="group" minOccurs="0" maxOccurs="unbounded">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="groupID64" type="xs:string" minOccurs="0" msdata:Ordinal="0" />
+                    <xs:element name="groupName" type="xs:string" minOccurs="0" msdata:Ordinal="1" />
+                    <xs:element name="groupURL" type="xs:string" minOccurs="0" msdata:Ordinal="2" />
+                    <xs:element name="headline" type="xs:string" minOccurs="0" msdata:Ordinal="3" />
+                    <xs:element name="summary" type="xs:string" minOccurs="0" msdata:Ordinal="4" />
+                    <xs:element name="avatarIcon" type="xs:string" minOccurs="0" msdata:Ordinal="5" />
+                    <xs:element name="avatarMedium" type="xs:string" minOccurs="0" msdata:Ordinal="6" />
+                    <xs:element name="avatarFull" type="xs:string" minOccurs="0" msdata:Ordinal="7" />
+                    <xs:element name="memberCount" type="xs:string" minOccurs="0" msdata:Ordinal="8" />
+                    <xs:element name="membersInChat" type="xs:string" minOccurs="0" msdata:Ordinal="9" />
+                    <xs:element name="membersInGame" type="xs:string" minOccurs="0" msdata:Ordinal="10" />
+                    <xs:element name="membersOnline" type="xs:string" minOccurs="0" msdata:Ordinal="11" />
+                  </xs:sequence>
+                  <xs:attribute name="isPrimary" type="xs:string" />
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="NewDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element ref="profile" />
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

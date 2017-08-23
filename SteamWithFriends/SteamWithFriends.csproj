@@ -6,6 +6,7 @@
 
   <ItemGroup>
     <Folder Include="Data\" />
+    <Folder Include="Views\Profile\" />
     <Folder Include="wwwroot\images\" />
   </ItemGroup>
 
